@@ -1,0 +1,22 @@
+# environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# raw CDC downloads and the intermediate merge: nhanes_pipeline_v7.ipynb
+# re-creates both. nhanes_out/nhanes_all.csv (16 MB) stays in the repo so
+# the src/ modules run without re-downloading.
+nhanes_raw/
+nhanes_out/nhanes_raw_merged.csv
+src/nhanes_out/
+
+# fitted models: re-created by python -m src.models
+results/*.joblib
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
