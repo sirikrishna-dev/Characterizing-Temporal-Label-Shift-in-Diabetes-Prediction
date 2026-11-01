@@ -1,0 +1,4 @@
+period,cycles,n,n_lab_weight_pos,n_fast_weight_pos,sum_w_millions,sum_w_int_pooled_millions
+train,"2011-2012, 2013-2014, 2015-2016",29902,28695,8512,311.4,311.4
+test_P,2017-2020,15560,14300,4476,322.3,322.3
+test_L,2021-2023,11933,6750,3361,280.0,327.0

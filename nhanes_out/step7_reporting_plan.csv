@@ -1,0 +1,79 @@
+subgroup,level,period,n_undiagnosed,role,status
+age_band,20-39,train,55,exploratory,exploratory only
+age_band,40-59,train,190,exploratory,exploratory only
+age_band,60+,train,223,exploratory,exploratory only
+age_band2,20-59,train,245,primary,report
+age_band2,60+,train,223,primary,report
+income_band,1.3-3.5,train,149,exploratory,exploratory only
+income_band,<1.3,train,177,exploratory,exploratory only
+income_band,>3.5,train,95,exploratory,exploratory only
+income_band2,<1.3,train,177,primary,report
+income_band2,>=1.3,train,244,primary,report
+insured,0.0,train,108,primary,report
+insured,1.0,train,359,primary,report
+race_eth,Mexican American,train,80,exploratory,exploratory only
+race_eth,NH Asian,train,74,exploratory,exploratory only
+race_eth,NH Black,train,131,exploratory,exploratory only
+race_eth,NH White,train,108,exploratory,exploratory only
+race_eth,Other Hispanic,train,65,exploratory,exploratory only
+race_eth,Other/Multi,train,10,exploratory,exploratory only
+race_eth4,Hispanic,train,145,exploratory,exploratory only
+race_eth4,NH Asian/Other,train,84,exploratory,exploratory only
+race_eth4,NH Black,train,131,exploratory,exploratory only
+race_eth4,NH White,train,108,exploratory,exploratory only
+routine_care,0.0,train,73,exploratory,exploratory only
+routine_care,1.0,train,395,exploratory,exploratory only
+sex,female,train,233,primary,report
+sex,male,train,235,primary,report
+age_band,20-39,test_P,30,exploratory,exploratory only
+age_band,40-59,test_P,118,exploratory,exploratory only
+age_band,60+,test_P,136,exploratory,exploratory only
+age_band2,20-59,test_P,148,primary,report
+age_band2,60+,test_P,136,primary,report
+income_band,1.3-3.5,test_P,99,exploratory,exploratory only
+income_band,<1.3,test_P,66,exploratory,exploratory only
+income_band,>3.5,test_P,80,exploratory,exploratory only
+income_band2,<1.3,test_P,66,primary,report
+income_band2,>=1.3,test_P,179,primary,report
+insured,0.0,test_P,53,primary,report
+insured,1.0,test_P,229,primary,report
+race_eth,Mexican American,test_P,44,exploratory,exploratory only
+race_eth,NH Asian,test_P,46,exploratory,exploratory only
+race_eth,NH Black,test_P,87,exploratory,exploratory only
+race_eth,NH White,test_P,55,exploratory,exploratory only
+race_eth,Other Hispanic,test_P,39,exploratory,exploratory only
+race_eth,Other/Multi,test_P,13,exploratory,exploratory only
+race_eth4,Hispanic,test_P,83,exploratory,exploratory only
+race_eth4,NH Asian/Other,test_P,59,exploratory,exploratory only
+race_eth4,NH Black,test_P,87,exploratory,exploratory only
+race_eth4,NH White,test_P,55,exploratory,exploratory only
+routine_care,0.0,test_P,44,exploratory,exploratory only
+routine_care,1.0,test_P,240,exploratory,exploratory only
+sex,female,test_P,153,primary,report
+sex,male,test_P,131,primary,report
+age_band,20-39,test_L,14,exploratory,exploratory only
+age_band,40-59,test_L,45,exploratory,exploratory only
+age_band,60+,test_L,93,exploratory,exploratory only
+age_band2,20-59,test_L,59,primary,report
+age_band2,60+,test_L,93,primary,report
+income_band,1.3-3.5,test_L,74,exploratory,exploratory only
+income_band,<1.3,test_L,29,exploratory,exploratory only
+income_band,>3.5,test_L,31,exploratory,exploratory only
+income_band2,<1.3,test_L,29,primary,"report with CI, label unstable, no strong claim"
+income_band2,>=1.3,test_L,105,primary,report
+insured,0.0,test_L,18,primary,"report with CI, label unstable, no strong claim"
+insured,1.0,test_L,133,primary,report
+race_eth,Mexican American,test_L,19,exploratory,exploratory only
+race_eth,NH Asian,test_L,12,exploratory,exploratory only
+race_eth,NH Black,test_L,29,exploratory,exploratory only
+race_eth,NH White,test_L,74,exploratory,exploratory only
+race_eth,Other Hispanic,test_L,14,exploratory,exploratory only
+race_eth,Other/Multi,test_L,4,exploratory,exploratory only
+race_eth4,Hispanic,test_L,33,exploratory,exploratory only
+race_eth4,NH Asian/Other,test_L,16,exploratory,exploratory only
+race_eth4,NH Black,test_L,29,exploratory,exploratory only
+race_eth4,NH White,test_L,74,exploratory,exploratory only
+routine_care,0.0,test_L,17,exploratory,exploratory only
+routine_care,1.0,test_L,135,exploratory,exploratory only
+sex,female,test_L,76,primary,report
+sex,male,test_L,76,primary,report

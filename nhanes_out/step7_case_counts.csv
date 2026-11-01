@@ -1,0 +1,148 @@
+cycle,period,subgroup,level,n_adults,n_undiagnosed,n_screened_answered,too_small
+2011-2012,train,income_band,<1.3,1614,66,1328,False
+2011-2012,train,income_band,1.3-3.5,1548,51,1301,False
+2011-2012,train,income_band,>3.5,1396,35,1250,False
+2011-2012,train,income_band,,408,17,321,True
+2011-2012,train,income_band2,<1.3,1614,66,1328,False
+2011-2012,train,income_band2,>=1.3,2944,86,2551,False
+2011-2012,train,income_band2,,408,17,321,True
+2011-2012,train,insured,0.0,1180,50,1057,False
+2011-2012,train,insured,1.0,3781,118,3139,False
+2011-2012,train,insured,,5,1,4,True
+2011-2012,train,routine_care,0.0,774,31,725,False
+2011-2012,train,routine_care,1.0,4192,138,3475,False
+2011-2012,train,age_band,20-39,1719,26,1648,True
+2011-2012,train,age_band,40-59,1663,72,1418,False
+2011-2012,train,age_band,60+,1584,71,1134,False
+2011-2012,train,age_band2,20-59,3382,98,3066,False
+2011-2012,train,age_band2,60+,1584,71,1134,False
+2011-2012,train,sex,female,2490,83,2127,False
+2011-2012,train,sex,male,2476,86,2073,False
+2011-2012,train,race_eth,Mexican American,490,21,417,True
+2011-2012,train,race_eth,NH Asian,693,30,605,False
+2011-2012,train,race_eth,NH Black,1273,57,1027,False
+2011-2012,train,race_eth,NH White,1859,28,1599,True
+2011-2012,train,race_eth,Other Hispanic,510,28,436,True
+2011-2012,train,race_eth,Other/Multi,141,5,116,True
+2011-2012,train,race_eth4,Hispanic,1000,49,853,False
+2011-2012,train,race_eth4,NH Asian/Other,834,35,721,False
+2011-2012,train,race_eth4,NH Black,1273,57,1027,False
+2011-2012,train,race_eth4,NH White,1859,28,1599,True
+2013-2014,train,income_band,<1.3,1686,51,1399,False
+2013-2014,train,income_band,1.3-3.5,1696,52,1428,False
+2013-2014,train,income_band,>3.5,1540,37,1357,False
+2013-2014,train,income_band,,406,8,344,True
+2013-2014,train,income_band2,<1.3,1686,51,1399,False
+2013-2014,train,income_band2,>=1.3,3236,89,2785,False
+2013-2014,train,income_band2,,406,8,344,True
+2013-2014,train,insured,0.0,1126,30,1021,False
+2013-2014,train,insured,1.0,4198,118,3503,False
+2013-2014,train,insured,,4,0,4,True
+2013-2014,train,routine_care,0.0,858,20,819,True
+2013-2014,train,routine_care,1.0,4470,128,3709,False
+2013-2014,train,age_band,20-39,1756,13,1687,True
+2013-2014,train,age_band,40-59,1856,56,1583,False
+2013-2014,train,age_band,60+,1716,79,1258,False
+2013-2014,train,age_band2,20-59,3612,69,3270,False
+2013-2014,train,age_band2,60+,1716,79,1258,False
+2013-2014,train,sex,female,2757,65,2349,False
+2013-2014,train,sex,male,2571,83,2179,False
+2013-2014,train,race_eth,Mexican American,722,24,588,True
+2013-2014,train,race_eth,NH Asian,607,24,529,True
+2013-2014,train,race_eth,NH Black,1055,36,873,False
+2013-2014,train,race_eth,NH White,2322,46,2005,False
+2013-2014,train,race_eth,Other Hispanic,467,16,399,True
+2013-2014,train,race_eth,Other/Multi,155,2,134,True
+2013-2014,train,race_eth4,Hispanic,1189,40,987,False
+2013-2014,train,race_eth4,NH Asian/Other,762,26,663,True
+2013-2014,train,race_eth4,NH Black,1055,36,873,False
+2013-2014,train,race_eth4,NH White,2322,46,2005,False
+2015-2016,train,income_band,<1.3,1477,60,1179,False
+2015-2016,train,income_band,1.3-3.5,1850,46,1524,False
+2015-2016,train,income_band,>3.5,1299,23,1103,True
+2015-2016,train,income_band,,512,22,415,True
+2015-2016,train,income_band2,<1.3,1477,60,1179,False
+2015-2016,train,income_band2,>=1.3,3149,69,2627,False
+2015-2016,train,income_band2,,512,22,415,True
+2015-2016,train,insured,0.0,898,28,793,True
+2015-2016,train,insured,1.0,4230,123,3419,False
+2015-2016,train,insured,,10,0,9,True
+2015-2016,train,routine_care,0.0,885,22,820,True
+2015-2016,train,routine_care,1.0,4253,129,3401,False
+2015-2016,train,age_band,20-39,1685,16,1585,True
+2015-2016,train,age_band,40-59,1721,62,1447,False
+2015-2016,train,age_band,60+,1732,73,1189,False
+2015-2016,train,age_band2,20-59,3406,78,3032,False
+2015-2016,train,age_band2,60+,1732,73,1189,False
+2015-2016,train,sex,female,2644,85,2211,False
+2015-2016,train,sex,male,2494,66,2010,False
+2015-2016,train,race_eth,Mexican American,914,35,708,False
+2015-2016,train,race_eth,NH Asian,602,20,519,True
+2015-2016,train,race_eth,NH Black,1056,38,850,False
+2015-2016,train,race_eth,NH White,1705,34,1431,False
+2015-2016,train,race_eth,Other Hispanic,680,21,556,True
+2015-2016,train,race_eth,Other/Multi,181,3,157,True
+2015-2016,train,race_eth4,Hispanic,1594,56,1264,False
+2015-2016,train,race_eth4,NH Asian/Other,783,23,676,True
+2015-2016,train,race_eth4,NH Black,1056,38,850,False
+2015-2016,train,race_eth4,NH White,1705,34,1431,False
+2017-2020,test_P,income_band,<1.3,1937,66,1557,False
+2017-2020,test_P,income_band,1.3-3.5,2729,99,2207,False
+2017-2020,test_P,income_band,>3.5,2247,80,1878,False
+2017-2020,test_P,income_band,,1087,39,890,False
+2017-2020,test_P,income_band2,<1.3,1937,66,1557,False
+2017-2020,test_P,income_band2,>=1.3,4976,179,4085,False
+2017-2020,test_P,income_band2,,1087,39,890,False
+2017-2020,test_P,insured,0.0,1274,53,1136,False
+2017-2020,test_P,insured,1.0,6708,229,5379,False
+2017-2020,test_P,insured,,18,2,17,True
+2017-2020,test_P,routine_care,0.0,1297,44,1197,False
+2017-2020,test_P,routine_care,1.0,6700,240,5333,False
+2017-2020,test_P,routine_care,,3,0,2,True
+2017-2020,test_P,age_band,20-39,2354,30,2251,False
+2017-2020,test_P,age_band,40-59,2671,118,2217,False
+2017-2020,test_P,age_band,60+,2975,136,2064,False
+2017-2020,test_P,age_band2,20-59,5025,148,4468,False
+2017-2020,test_P,age_band2,60+,2975,136,2064,False
+2017-2020,test_P,sex,female,4097,153,3422,False
+2017-2020,test_P,sex,male,3903,131,3110,False
+2017-2020,test_P,race_eth,Mexican American,950,44,766,False
+2017-2020,test_P,race_eth,NH Asian,960,46,814,False
+2017-2020,test_P,race_eth,NH Black,2058,87,1672,False
+2017-2020,test_P,race_eth,NH White,2810,55,2281,False
+2017-2020,test_P,race_eth,Other Hispanic,838,39,690,False
+2017-2020,test_P,race_eth,Other/Multi,384,13,309,True
+2017-2020,test_P,race_eth4,Hispanic,1788,83,1456,False
+2017-2020,test_P,race_eth4,NH Asian/Other,1344,59,1123,False
+2017-2020,test_P,race_eth4,NH Black,2058,87,1672,False
+2017-2020,test_P,race_eth4,NH White,2810,55,2281,False
+2021-2023,test_L,income_band,<1.3,1069,29,851,True
+2021-2023,test_L,income_band,1.3-3.5,1889,74,1533,False
+2021-2023,test_L,income_band,>3.5,2038,31,1747,False
+2021-2023,test_L,income_band,,734,18,606,True
+2021-2023,test_L,income_band2,<1.3,1069,29,851,True
+2021-2023,test_L,income_band2,>=1.3,3927,105,3280,False
+2021-2023,test_L,income_band2,,734,18,606,True
+2021-2023,test_L,insured,0.0,474,18,425,True
+2021-2023,test_L,insured,1.0,5247,133,4304,False
+2021-2023,test_L,insured,,9,1,8,True
+2021-2023,test_L,routine_care,0.0,636,17,592,True
+2021-2023,test_L,routine_care,1.0,5093,135,4144,False
+2021-2023,test_L,routine_care,,1,0,1,True
+2021-2023,test_L,age_band,20-39,1414,14,1337,True
+2021-2023,test_L,age_band,40-59,1671,45,1402,False
+2021-2023,test_L,age_band,60+,2645,93,1998,False
+2021-2023,test_L,age_band2,20-59,3085,59,2739,False
+2021-2023,test_L,age_band2,60+,2645,93,1998,False
+2021-2023,test_L,sex,female,3144,76,2641,False
+2021-2023,test_L,sex,male,2586,76,2096,False
+2021-2023,test_L,race_eth,Mexican American,386,19,316,True
+2021-2023,test_L,race_eth,NH Asian,315,12,275,True
+2021-2023,test_L,race_eth,NH Black,676,29,532,True
+2021-2023,test_L,race_eth,NH White,3408,74,2849,False
+2021-2023,test_L,race_eth,Other Hispanic,582,14,483,True
+2021-2023,test_L,race_eth,Other/Multi,363,4,282,True
+2021-2023,test_L,race_eth4,Hispanic,968,33,799,False
+2021-2023,test_L,race_eth4,NH Asian/Other,678,16,557,True
+2021-2023,test_L,race_eth4,NH Black,676,29,532,True
+2021-2023,test_L,race_eth4,NH White,3408,74,2849,False

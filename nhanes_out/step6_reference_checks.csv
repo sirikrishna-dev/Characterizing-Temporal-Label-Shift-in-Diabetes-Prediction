@@ -1,0 +1,7 @@
+cycle,measure,ours_pct,nchs_pct,nchs_ci,match
+2021-2023,NCHS-style: Total (HbA1c or FPG),15.8,15.8,13.6-18.2,PASS
+2021-2023,NCHS-style: Diagnosed,11.3,11.3,9.3-13.5,PASS
+2021-2023,NCHS-style: Undiagnosed,4.5,4.5,3.3-5.9,PASS
+2013-2016,2013-16 pooled: Total,14.9,15.0,ours 13.4-16.4,PASS
+2013-2016,2013-16 pooled: Diagnosed,10.5,10.5,ours 9.3-11.8,PASS
+2013-2016,2013-16 pooled: Undiagnosed,4.4,4.5,ours 3.5-5.2,PASS

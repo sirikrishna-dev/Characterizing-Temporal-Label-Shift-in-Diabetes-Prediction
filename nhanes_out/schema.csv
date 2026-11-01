@@ -1,0 +1,44 @@
+column,rule
+SEQN,int
+cycle,"['2011-2012', '2013-2014', '2015-2016', '2017-2020', '2021-2023']"
+period,"['test_L', 'test_P', 'train']"
+stratum,str
+psu,str
+w_int,weight
+w_mec,weight
+w_lab,weight
+w_fast,weight
+w,weight
+w_int_pooled,weight
+w_fast_pooled,weight
+pool_factor,"['0.3333333333333333', '1.0']"
+adult,bool
+lab_sample,bool
+y_diag,"['0.0', '1.0']"
+y_bio,"['0.0', '1.0']"
+y_bio_any,"['0.0', '1.0']"
+undx,"['0.0', '1.0']"
+y_bio_fpg,"['0.0', '1.0']"
+undx_fpg,"['0.0', '1.0']"
+y_diag_fpg,"['0.0', '1.0']"
+screened,"['0.0', '1.0']"
+insured,"['0.0', '1.0']"
+usual_source_care,"['0.0', '1.0']"
+routine_care,"['0.0', '1.0']"
+age,num
+pir,num
+education,num
+bmi,num
+waist,num
+sbp,num
+dbp,num
+hba1c,num
+fpg,num
+bp_method,"['auscultatory', 'oscillometric']"
+income_band,"['1.3-3.5', '<1.3', '>3.5']"
+income_band2,"['<1.3', '>=1.3']"
+age_band,"['20-39', '40-59', '60+']"
+age_band2,"['20-59', '60+']"
+sex,"['female', 'male']"
+race_eth,"['Mexican American', 'NH Asian', 'NH Black', 'NH White', 'Other Hispanic', 'Other/Multi']"
+race_eth4,"['Hispanic', 'NH Asian/Other', 'NH Black', 'NH White']"
