@@ -1,0 +1,289 @@
+period_label,subgroup,level,role,method,label_or_gap,metric,mean_signed,mean_abs,n_rows
+2017-2020,all,all,overall,logistic,age,diagnosed_flagged,0.801644869223817,0.8403496960351771,998
+2017-2020,all,all,overall,logistic,education,diagnosed_flagged,0.057554644930931674,0.1514100815437171,998
+2017-2020,all,all,overall,logistic,pir,diagnosed_flagged,0.02080919291033974,0.18402825508701703,998
+2017-2020,all,all,overall,logistic,bmi,diagnosed_flagged,0.09479270786118428,0.12565486999498585,998
+2017-2020,all,all,overall,logistic,waist,diagnosed_flagged,0.45620708434340657,0.5177688564514701,998
+2017-2020,all,all,overall,logistic,insured,diagnosed_flagged,0.01891732570201365,0.0319812622265839,998
+2017-2020,all,all,overall,logistic,routine_care,diagnosed_flagged,0.11815047374401888,0.16181847632273963,998
+2017-2020,all,all,overall,logistic,male,diagnosed_flagged,0.015004633060290491,0.10875856834594688,998
+2017-2020,all,all,overall,logistic,pir_missing,diagnosed_flagged,-0.0017226777834497544,0.007869389650344383,998
+2017-2020,all,all,overall,logistic,access,diagnosed_flagged,0.13706779944603248,0.1825350611927504,998
+2017-2020,all,all,overall,logistic,body_size,diagnosed_flagged,0.5509997922045908,0.6322680875104533,998
+2017-2020,all,all,overall,logistic,socioeconomic,diagnosed_flagged,0.07664116005782168,0.26645182374632254,998
+2017-2020,all,all,overall,logistic,age,diagnosed_missed,-0.014081352632575463,0.4015438804655505,259
+2017-2020,all,all,overall,logistic,education,diagnosed_missed,-0.024172826125618642,0.13884962161543252,259
+2017-2020,all,all,overall,logistic,pir,diagnosed_missed,-0.055235534619057385,0.2114106069417987,259
+2017-2020,all,all,overall,logistic,bmi,diagnosed_missed,0.0023338975449174394,0.08991124280410771,259
+2017-2020,all,all,overall,logistic,waist,diagnosed_missed,0.006381385255406005,0.3216422205876236,259
+2017-2020,all,all,overall,logistic,insured,diagnosed_missed,0.006083733189569681,0.040453786025821455,259
+2017-2020,all,all,overall,logistic,routine_care,diagnosed_missed,0.015888032694459535,0.23195465536372692,259
+2017-2020,all,all,overall,logistic,male,diagnosed_missed,0.01184692326237217,0.10867097193966968,259
+2017-2020,all,all,overall,logistic,pir_missing,diagnosed_missed,-0.0014790172444515423,0.007658889957222213,259
+2017-2020,all,all,overall,logistic,access,diagnosed_missed,0.021971765884029208,0.2514233485768689,259
+2017-2020,all,all,overall,logistic,body_size,diagnosed_missed,0.008715282800323451,0.4001676024930205,259
+2017-2020,all,all,overall,logistic,socioeconomic,diagnosed_missed,-0.08088737798912757,0.3031148743256176,259
+2017-2020,all,all,overall,logistic,age,undiagnosed_flagged,0.6798717837875163,0.7843604132389559,188
+2017-2020,all,all,overall,logistic,education,undiagnosed_flagged,0.05334971540688995,0.16614563231523366,188
+2017-2020,all,all,overall,logistic,pir,undiagnosed_flagged,0.015926458812377673,0.19074578018944105,188
+2017-2020,all,all,overall,logistic,bmi,undiagnosed_flagged,0.1458738658867256,0.1580958521560302,188
+2017-2020,all,all,overall,logistic,waist,undiagnosed_flagged,0.5546273859232421,0.590376136601104,188
+2017-2020,all,all,overall,logistic,insured,undiagnosed_flagged,0.009230502532296658,0.0383763413725715,188
+2017-2020,all,all,overall,logistic,routine_care,undiagnosed_flagged,0.10826909297522325,0.1685955714483738,188
+2017-2020,all,all,overall,logistic,male,undiagnosed_flagged,-0.026072478392856355,0.10761906928687659,188
+2017-2020,all,all,overall,logistic,pir_missing,undiagnosed_flagged,-0.003608310051519154,0.009498397841009129,188
+2017-2020,all,all,overall,logistic,access,undiagnosed_flagged,0.11749959550751986,0.17728689192043307,188
+2017-2020,all,all,overall,logistic,body_size,undiagnosed_flagged,0.7005012518099676,0.7419859168380567,188
+2017-2020,all,all,overall,logistic,socioeconomic,undiagnosed_flagged,0.06566786416774846,0.2709701285296521,188
+2017-2020,all,all,overall,logistic,age,undiagnosed_missed,-0.015141376944552436,0.43522630869195006,96
+2017-2020,all,all,overall,logistic,education,undiagnosed_missed,0.002015912798846537,0.18975504786524405,96
+2017-2020,all,all,overall,logistic,pir,undiagnosed_missed,-0.03321973039071423,0.220825264855788,96
+2017-2020,all,all,overall,logistic,bmi,undiagnosed_missed,0.013792369247786181,0.08895864238036694,96
+2017-2020,all,all,overall,logistic,waist,undiagnosed_missed,0.06081361047050754,0.36095850755735065,96
+2017-2020,all,all,overall,logistic,insured,undiagnosed_missed,-0.022374706447949876,0.059241573380317485,96
+2017-2020,all,all,overall,logistic,routine_care,undiagnosed_missed,-0.1434015031660668,0.3412025795459336,96
+2017-2020,all,all,overall,logistic,male,undiagnosed_missed,0.008844965152399678,0.10858769616100196,96
+2017-2020,all,all,overall,logistic,pir_missing,undiagnosed_missed,0.0012335776664689352,0.005315464145799723,96
+2017-2020,all,all,overall,logistic,access,undiagnosed_missed,-0.16577620961401668,0.3468771837965642,96
+2017-2020,all,all,overall,logistic,body_size,undiagnosed_missed,0.07460597971829375,0.4452354568673298,96
+2017-2020,all,all,overall,logistic,socioeconomic,undiagnosed_missed,-0.029970239925398764,0.3684476355371159,96
+2017-2020,all,all,overall,lightgbm,age,diagnosed_flagged,0.9151943361519501,0.9335226464746719,1007
+2017-2020,all,all,overall,lightgbm,education,diagnosed_flagged,0.008384663017162758,0.13072644004450198,1007
+2017-2020,all,all,overall,lightgbm,pir,diagnosed_flagged,-0.03658491647253381,0.1993796629732635,1007
+2017-2020,all,all,overall,lightgbm,bmi,diagnosed_flagged,0.1496032242035872,0.18375215282316165,1007
+2017-2020,all,all,overall,lightgbm,waist,diagnosed_flagged,0.4980761849289164,0.5531667511457162,1007
+2017-2020,all,all,overall,lightgbm,insured,diagnosed_flagged,0.018753594833288884,0.029464860984026692,1007
+2017-2020,all,all,overall,lightgbm,routine_care,diagnosed_flagged,0.09865720644629548,0.14597084104244348,1007
+2017-2020,all,all,overall,lightgbm,male,diagnosed_flagged,0.015196350959011486,0.04772351503783679,1007
+2017-2020,all,all,overall,lightgbm,pir_missing,diagnosed_flagged,-0.0007349993658975676,0.0024200879557955833,1007
+2017-2020,all,all,overall,lightgbm,access,diagnosed_flagged,0.11741080127958436,0.1670594339190097,1007
+2017-2020,all,all,overall,lightgbm,body_size,diagnosed_flagged,0.6476794091325035,0.7097949504089296,1007
+2017-2020,all,all,overall,lightgbm,socioeconomic,diagnosed_flagged,-0.028935252821268617,0.27198748384321336,1007
+2017-2020,all,all,overall,lightgbm,age,diagnosed_missed,0.06351163800741631,0.7042106612796897,250
+2017-2020,all,all,overall,lightgbm,education,diagnosed_missed,-0.05916491148269968,0.18981122261384487,250
+2017-2020,all,all,overall,lightgbm,pir,diagnosed_missed,-0.20014890877592734,0.2710727669662229,250
+2017-2020,all,all,overall,lightgbm,bmi,diagnosed_missed,0.042317039927105324,0.11852506647031472,250
+2017-2020,all,all,overall,lightgbm,waist,diagnosed_missed,-0.08126506444888928,0.4680871093358974,250
+2017-2020,all,all,overall,lightgbm,insured,diagnosed_missed,0.020226622313162718,0.04852035027298844,250
+2017-2020,all,all,overall,lightgbm,routine_care,diagnosed_missed,-0.04739707725161322,0.23276772433188395,250
+2017-2020,all,all,overall,lightgbm,male,diagnosed_missed,-0.006491541616597637,0.062140338400066844,250
+2017-2020,all,all,overall,lightgbm,pir_missing,diagnosed_missed,1.5702823873399323e-06,0.001797363641449513,250
+2017-2020,all,all,overall,lightgbm,access,diagnosed_missed,-0.027170454938450515,0.26108371345197695,250
+2017-2020,all,all,overall,lightgbm,body_size,diagnosed_missed,-0.038948024521783975,0.5533920926509149,250
+2017-2020,all,all,overall,lightgbm,socioeconomic,diagnosed_missed,-0.25931224997623964,0.4137015632410363,250
+2017-2020,all,all,overall,lightgbm,age,undiagnosed_flagged,0.8443600211600999,0.8868032434860199,191
+2017-2020,all,all,overall,lightgbm,education,undiagnosed_flagged,0.007007515974783633,0.17334441281192164,191
+2017-2020,all,all,overall,lightgbm,pir,undiagnosed_flagged,-0.035220731086289744,0.19838992468080455,191
+2017-2020,all,all,overall,lightgbm,bmi,undiagnosed_flagged,0.14589719395627568,0.18943301488839953,191
+2017-2020,all,all,overall,lightgbm,waist,undiagnosed_flagged,0.5935290274656964,0.620605120194489,191
+2017-2020,all,all,overall,lightgbm,insured,undiagnosed_flagged,0.009528853232549145,0.03895118549471879,191
+2017-2020,all,all,overall,lightgbm,routine_care,undiagnosed_flagged,0.1035106105758511,0.13546435203809787,191
+2017-2020,all,all,overall,lightgbm,male,undiagnosed_flagged,-0.01009389957779537,0.04691520120820189,191
+2017-2020,all,all,overall,lightgbm,pir_missing,undiagnosed_flagged,0.0003424164417063342,0.002267434321956199,191
+2017-2020,all,all,overall,lightgbm,access,undiagnosed_flagged,0.11303946380840024,0.15438554972184343,191
+2017-2020,all,all,overall,lightgbm,body_size,undiagnosed_flagged,0.7394262214219722,0.7712414851900882,191
+2017-2020,all,all,overall,lightgbm,socioeconomic,undiagnosed_flagged,-0.027870798669799773,0.3020671880849321,191
+2017-2020,all,all,overall,lightgbm,age,undiagnosed_missed,0.02581461492886969,0.6594729968027139,93
+2017-2020,all,all,overall,lightgbm,education,undiagnosed_missed,-0.09646052187552748,0.2464330279461531,93
+2017-2020,all,all,overall,lightgbm,pir,undiagnosed_missed,-0.14875461841345983,0.2755124432990334,93
+2017-2020,all,all,overall,lightgbm,bmi,undiagnosed_missed,0.06860324512628527,0.14176252667165046,93
+2017-2020,all,all,overall,lightgbm,waist,undiagnosed_missed,0.01736746085303305,0.5602721339853077,93
+2017-2020,all,all,overall,lightgbm,insured,undiagnosed_missed,0.0037811351923781843,0.05105546216822932,93
+2017-2020,all,all,overall,lightgbm,routine_care,undiagnosed_missed,-0.2022326275176843,0.34833761515899175,93
+2017-2020,all,all,overall,lightgbm,male,undiagnosed_missed,-0.010551157329866414,0.057284883046761347,93
+2017-2020,all,all,overall,lightgbm,pir_missing,undiagnosed_missed,0.0006105633397434216,0.0012716537724304891,93
+2017-2020,all,all,overall,lightgbm,access,undiagnosed_missed,-0.19845149232530612,0.36723588615425085,93
+2017-2020,all,all,overall,lightgbm,body_size,undiagnosed_missed,0.08597070597931838,0.6668100555211005,93
+2017-2020,all,all,overall,lightgbm,socioeconomic,undiagnosed_missed,-0.2446045769492439,0.45224240649249703,93
+2021-2023,all,all,overall,logistic,age,diagnosed_flagged,0.7671197422503927,0.82338999139701,671
+2021-2023,all,all,overall,logistic,education,diagnosed_flagged,0.061790307374265746,0.15463652601400357,671
+2021-2023,all,all,overall,logistic,pir,diagnosed_flagged,0.055673889308542536,0.18340976920404273,671
+2021-2023,all,all,overall,logistic,bmi,diagnosed_flagged,0.10513617748128751,0.13970539857662453,671
+2021-2023,all,all,overall,logistic,waist,diagnosed_flagged,0.4520003141145466,0.534200088089707,671
+2021-2023,all,all,overall,logistic,insured,diagnosed_flagged,0.021455992394482176,0.030305276803997416,671
+2021-2023,all,all,overall,logistic,routine_care,diagnosed_flagged,0.13226229358251748,0.15213995591359517,671
+2021-2023,all,all,overall,logistic,male,diagnosed_flagged,0.008432445382772024,0.108576252661868,671
+2021-2023,all,all,overall,logistic,pir_missing,diagnosed_flagged,-0.0028911880446551266,0.008878872155821584,671
+2021-2023,all,all,overall,logistic,access,diagnosed_flagged,0.1537182859769996,0.1729071668209344,671
+2021-2023,all,all,overall,logistic,body_size,diagnosed_flagged,0.5571364915958343,0.6608309685108543,671
+2021-2023,all,all,overall,logistic,socioeconomic,diagnosed_flagged,0.11457300863815316,0.2828473882755355,671
+2021-2023,all,all,overall,logistic,age,diagnosed_missed,-0.031107330085296595,0.474948226839381,148
+2021-2023,all,all,overall,logistic,education,diagnosed_missed,-0.003106252122394707,0.14951880218530367,148
+2021-2023,all,all,overall,logistic,pir,diagnosed_missed,0.01028593336736197,0.20123060077075716,148
+2021-2023,all,all,overall,logistic,bmi,diagnosed_missed,0.007351521771403357,0.09363528345942262,148
+2021-2023,all,all,overall,logistic,waist,diagnosed_missed,0.011724700351670725,0.31656711503027674,148
+2021-2023,all,all,overall,logistic,insured,diagnosed_missed,0.012504614368686766,0.03621482732821621,148
+2021-2023,all,all,overall,logistic,routine_care,diagnosed_missed,0.005036023820970177,0.2393974508758795,148
+2021-2023,all,all,overall,logistic,male,diagnosed_missed,0.0010900758894401496,0.10837257175946224,148
+2021-2023,all,all,overall,logistic,pir_missing,diagnosed_missed,-0.006522690281867953,0.012016147110759571,148
+2021-2023,all,all,overall,logistic,access,diagnosed_missed,0.017540638189656933,0.25676908304255325,148
+2021-2023,all,all,overall,logistic,body_size,diagnosed_missed,0.01907622212307409,0.39360528333631073,148
+2021-2023,all,all,overall,logistic,socioeconomic,diagnosed_missed,0.0006569909630993215,0.2974650385526965,148
+2021-2023,all,all,overall,logistic,age,undiagnosed_flagged,0.6304628725958908,0.7640760720674354,120
+2021-2023,all,all,overall,logistic,education,undiagnosed_flagged,0.06817012295347494,0.16735205185651914,120
+2021-2023,all,all,overall,logistic,pir,undiagnosed_flagged,0.07575987820386501,0.16290377027921354,120
+2021-2023,all,all,overall,logistic,bmi,undiagnosed_flagged,0.13156961823386545,0.15475901540704426,120
+2021-2023,all,all,overall,logistic,waist,undiagnosed_flagged,0.5599836810227835,0.6137130272665624,120
+2021-2023,all,all,overall,logistic,insured,undiagnosed_flagged,0.012513150592220947,0.03620919185576538,120
+2021-2023,all,all,overall,logistic,routine_care,undiagnosed_flagged,0.11647432439986043,0.16296805489034255,120
+2021-2023,all,all,overall,logistic,male,undiagnosed_flagged,0.02215648103957489,0.10895696408884872,120
+2021-2023,all,all,overall,logistic,pir_missing,undiagnosed_flagged,-0.004103331956546114,0.009926050014501581,120
+2021-2023,all,all,overall,logistic,access,undiagnosed_flagged,0.12898747499208135,0.18125291701217577,120
+2021-2023,all,all,overall,logistic,body_size,undiagnosed_flagged,0.6915532992566491,0.7580243471493319,120
+2021-2023,all,all,overall,logistic,socioeconomic,undiagnosed_flagged,0.13982666920079387,0.2678715414634493,120
+2021-2023,all,all,overall,logistic,age,undiagnosed_missed,0.00697050381011964,0.4669308656296489,32
+2021-2023,all,all,overall,logistic,education,undiagnosed_missed,-0.009332933377693618,0.14917491612204725,32
+2021-2023,all,all,overall,logistic,pir,undiagnosed_missed,0.00400886929118213,0.17420303709043827,32
+2021-2023,all,all,overall,logistic,bmi,undiagnosed_missed,0.04965801502888864,0.0773523937820163,32
+2021-2023,all,all,overall,logistic,waist,undiagnosed_missed,0.17368767492262993,0.34116795056458266,32
+2021-2023,all,all,overall,logistic,insured,undiagnosed_missed,-0.019075987375323615,0.05706381404888126,32
+2021-2023,all,all,overall,logistic,routine_care,undiagnosed_missed,-0.19479964657368581,0.3764537367783732,32
+2021-2023,all,all,overall,logistic,male,undiagnosed_missed,-0.00018758124442198754,0.10833712892888468,32
+2021-2023,all,all,overall,logistic,pir_missing,undiagnosed_missed,-8.67806588222155e-05,0.006456129037323794,32
+2021-2023,all,all,overall,logistic,access,undiagnosed_missed,-0.2138756339490094,0.3972192931886139,32
+2021-2023,all,all,overall,logistic,body_size,undiagnosed_missed,0.22334568995151854,0.4082868072006902,32
+2021-2023,all,all,overall,logistic,socioeconomic,undiagnosed_missed,-0.0054108447453337025,0.2365138720590821,32
+2021-2023,all,all,overall,lightgbm,age,diagnosed_flagged,0.9157671210161047,0.9329345650553252,663
+2021-2023,all,all,overall,lightgbm,education,diagnosed_flagged,0.019647987401086902,0.13556538941891969,663
+2021-2023,all,all,overall,lightgbm,pir,diagnosed_flagged,0.0073792322917050675,0.1881761995730878,663
+2021-2023,all,all,overall,lightgbm,bmi,diagnosed_flagged,0.15685091806507523,0.1915298171600356,663
+2021-2023,all,all,overall,lightgbm,waist,diagnosed_flagged,0.5307754391372271,0.5838224164895772,663
+2021-2023,all,all,overall,lightgbm,insured,diagnosed_flagged,0.016135135122283133,0.027114111602867745,663
+2021-2023,all,all,overall,lightgbm,routine_care,diagnosed_flagged,0.1178421130440983,0.1328760571390465,663
+2021-2023,all,all,overall,lightgbm,male,diagnosed_flagged,0.008118790146219199,0.04541582209004037,663
+2021-2023,all,all,overall,lightgbm,pir_missing,diagnosed_flagged,-0.000474649558136831,0.0025479843118930796,663
+2021-2023,all,all,overall,lightgbm,access,diagnosed_flagged,0.13397724816638146,0.1512054846159715,663
+2021-2023,all,all,overall,lightgbm,body_size,diagnosed_flagged,0.6876263572023024,0.7461738860980571,663
+2021-2023,all,all,overall,lightgbm,socioeconomic,diagnosed_flagged,0.02655257013465515,0.28177700337072875,663
+2021-2023,all,all,overall,lightgbm,age,diagnosed_missed,-0.010095968325070476,0.8149314003480117,156
+2021-2023,all,all,overall,lightgbm,education,diagnosed_missed,-0.062044677009996406,0.21549267951361734,156
+2021-2023,all,all,overall,lightgbm,pir,diagnosed_missed,-0.1224823509094347,0.2602863151043557,156
+2021-2023,all,all,overall,lightgbm,bmi,diagnosed_missed,0.046294917601265015,0.13314872255236104,156
+2021-2023,all,all,overall,lightgbm,waist,diagnosed_missed,-0.11687918615123602,0.45601596407156264,156
+2021-2023,all,all,overall,lightgbm,insured,diagnosed_missed,0.014434466777697408,0.042545771687321765,156
+2021-2023,all,all,overall,lightgbm,routine_care,diagnosed_missed,-0.031034500563558037,0.22683288148257516,156
+2021-2023,all,all,overall,lightgbm,male,diagnosed_missed,-0.009310505695279185,0.05286857586447926,156
+2021-2023,all,all,overall,lightgbm,pir_missing,diagnosed_missed,-0.001411812977563173,0.0023845663503449725,156
+2021-2023,all,all,overall,lightgbm,access,diagnosed_missed,-0.01660003378586063,0.2472419437114191,156
+2021-2023,all,all,overall,lightgbm,body_size,diagnosed_missed,-0.070584268549971,0.5458817519186979,156
+2021-2023,all,all,overall,lightgbm,socioeconomic,diagnosed_missed,-0.18593884089699428,0.4313804287732984,156
+2021-2023,all,all,overall,lightgbm,age,undiagnosed_flagged,0.8165964532928491,0.8360041015788464,118
+2021-2023,all,all,overall,lightgbm,education,undiagnosed_flagged,0.039479358902124034,0.15645351469367508,118
+2021-2023,all,all,overall,lightgbm,pir,undiagnosed_flagged,0.003244876755665548,0.15456546412839084,118
+2021-2023,all,all,overall,lightgbm,bmi,undiagnosed_flagged,0.16605511650956387,0.19113991344041797,118
+2021-2023,all,all,overall,lightgbm,waist,undiagnosed_flagged,0.5504959206330837,0.6070202396517684,118
+2021-2023,all,all,overall,lightgbm,insured,undiagnosed_flagged,0.01392785406309152,0.029353472185636303,118
+2021-2023,all,all,overall,lightgbm,routine_care,undiagnosed_flagged,0.08115855782321532,0.15416950700649026,118
+2021-2023,all,all,overall,lightgbm,male,undiagnosed_flagged,0.01525912138149744,0.0421421700299944,118
+2021-2023,all,all,overall,lightgbm,pir_missing,undiagnosed_flagged,-0.0028865762387253577,0.0053606808227876085,118
+2021-2023,all,all,overall,lightgbm,access,undiagnosed_flagged,0.09508641188630683,0.1708109678112287,118
+2021-2023,all,all,overall,lightgbm,body_size,undiagnosed_flagged,0.7165510371426475,0.779208272380991,118
+2021-2023,all,all,overall,lightgbm,socioeconomic,undiagnosed_flagged,0.039837659419064204,0.24795002732324267,118
+2021-2023,all,all,overall,lightgbm,age,undiagnosed_missed,0.017272333141770534,0.6424788666832133,34
+2021-2023,all,all,overall,lightgbm,education,undiagnosed_missed,-0.09909119977462186,0.2016867213542503,34
+2021-2023,all,all,overall,lightgbm,pir,undiagnosed_missed,-0.08656436491031821,0.1544748185312981,34
+2021-2023,all,all,overall,lightgbm,bmi,undiagnosed_missed,0.12760912533643917,0.15871251426384522,34
+2021-2023,all,all,overall,lightgbm,waist,undiagnosed_missed,0.14042348921997128,0.43593581586660757,34
+2021-2023,all,all,overall,lightgbm,insured,undiagnosed_missed,-0.01821276647324614,0.058848360758143675,34
+2021-2023,all,all,overall,lightgbm,routine_care,undiagnosed_missed,-0.1810415067475498,0.33308104759955887,34
+2021-2023,all,all,overall,lightgbm,male,undiagnosed_missed,-0.010574464225271333,0.0429139842046472,34
+2021-2023,all,all,overall,lightgbm,pir_missing,undiagnosed_missed,0.0002076794039931725,0.0009824630625222138,34
+2021-2023,all,all,overall,lightgbm,access,undiagnosed_missed,-0.19925427322079597,0.33705513188316577,34
+2021-2023,all,all,overall,lightgbm,body_size,undiagnosed_missed,0.26803261455641036,0.5803911738791727,34
+2021-2023,all,all,overall,lightgbm,socioeconomic,undiagnosed_missed,-0.1854478852809469,0.2987225259910275,34
+2017-2023 pooled,all,all,overall,logistic,age,diagnosed_flagged,0.7880192400161476,0.8336564072009568,1669
+2017-2023 pooled,all,all,overall,logistic,education,diagnosed_flagged,0.05922628442833735,0.1526834247538695,1669
+2017-2023 pooled,all,all,overall,logistic,pir,diagnosed_flagged,0.034568836022602585,0.18378416447677623,1669
+2017-2023 pooled,all,all,overall,logistic,bmi,diagnosed_flagged,0.09887484438374672,0.13120002824371688,1669
+2017-2023 pooled,all,all,overall,logistic,waist,diagnosed_flagged,0.4545468473993273,0.5242535790102105,1669
+2017-2023 pooled,all,all,overall,logistic,insured,diagnosed_flagged,0.019919231677915285,0.03131982060630541,1669
+2017-2023 pooled,all,all,overall,logistic,routine_care,diagnosed_flagged,0.12371982109827552,0.15799876755018755,1669
+2017-2023 pooled,all,all,overall,logistic,male,diagnosed_flagged,0.012410864398816439,0.10868661594119794,1669
+2017-2023 pooled,all,all,overall,logistic,pir_missing,diagnosed_flagged,-0.002183840100297916,0.008267790337526481,1669
+2017-2023 pooled,all,all,overall,logistic,access,diagnosed_flagged,0.1436390527761908,0.17873533240791634,1669
+2017-2023 pooled,all,all,overall,logistic,body_size,diagnosed_flagged,0.5534216917830741,0.643540666635617,1669
+2017-2023 pooled,all,all,overall,logistic,socioeconomic,diagnosed_flagged,0.091611280350642,0.27292246998311803,1669
+2017-2023 pooled,all,all,overall,logistic,age,diagnosed_missed,-0.021009872665372162,0.4314149105287408,407
+2017-2023 pooled,all,all,overall,logistic,education,diagnosed_missed,-0.015600033144478906,0.14319131838539173,407
+2017-2023 pooled,all,all,overall,logistic,pir,diagnosed_missed,-0.028572348626784164,0.20726797390437612,407
+2017-2023 pooled,all,all,overall,logistic,bmi,diagnosed_missed,0.004375760343502172,0.09142669707714123,407
+2017-2023 pooled,all,all,overall,logistic,waist,diagnosed_missed,0.008555784099103425,0.3195769664416999,407
+2017-2023 pooled,all,all,overall,logistic,insured,diagnosed_missed,0.008696634798376285,0.03872879194920462,407
+2017-2023 pooled,all,all,overall,logistic,routine_care,diagnosed_missed,0.011471936109999312,0.23498341291665775,407
+2017-2023 pooled,all,all,overall,logistic,male,diagnosed_missed,0.00746955152438807,0.10854954151771017,407
+2017-2023 pooled,all,all,overall,logistic,pir_missing,diagnosed_missed,-0.003531480298373368,0.009432024190493818,407
+2017-2023 pooled,all,all,overall,logistic,access,diagnosed_missed,0.02016857090837559,0.2535987319543199,407
+2017-2023 pooled,all,all,overall,logistic,body_size,diagnosed_missed,0.012931544442605598,0.39749714437306094,407
+2017-2023 pooled,all,all,overall,logistic,socioeconomic,diagnosed_missed,-0.04770386206963645,0.3008157405200317,407
+2017-2023 pooled,all,all,overall,logistic,age,undiagnosed_flagged,0.6593582756008786,0.7759387947768785,308
+2017-2023 pooled,all,all,overall,logistic,education,undiagnosed_flagged,0.05950282714734274,0.16664651154004995,308
+2017-2023 pooled,all,all,overall,logistic,pir,undiagnosed_flagged,0.040767996683178674,0.17918638160219372,308
+2017-2023 pooled,all,all,overall,logistic,bmi,undiagnosed_flagged,0.13993505253800367,0.15671046991794924,308
+2017-2023 pooled,all,all,overall,logistic,waist,undiagnosed_flagged,0.5568512034639351,0.600065107399507,308
+2017-2023 pooled,all,all,overall,logistic,insured,undiagnosed_flagged,0.010593386802098599,0.03747658790133521,308
+2017-2023 pooled,all,all,overall,logistic,routine_care,undiagnosed_flagged,0.1116757270811592,0.16625914864124297,308
+2017-2023 pooled,all,all,overall,logistic,male,undiagnosed_flagged,-0.006048860582029374,0.1081745341880697,308
+2017-2023 pooled,all,all,overall,logistic,pir_missing,undiagnosed_flagged,-0.0038138324088516657,0.009675949747140946,308
+2017-2023 pooled,all,all,overall,logistic,access,undiagnosed_flagged,0.12226911388325779,0.17893349951055668,308
+2017-2023 pooled,all,all,overall,logistic,body_size,undiagnosed_flagged,0.6967862560019391,0.7486447252099951,308
+2017-2023 pooled,all,all,overall,logistic,socioeconomic,undiagnosed_flagged,0.09645699142166976,0.2696836623919337,308
+2017-2023 pooled,all,all,overall,logistic,age,undiagnosed_missed,-0.007931529531767546,0.4455639647397045,128
+2017-2023 pooled,all,all,overall,logistic,education,undiagnosed_missed,-0.001684516402623942,0.17652340280052753,128
+2017-2023 pooled,all,all,overall,logistic,pir,undiagnosed_missed,-0.02108089308075765,0.20562352096246267,128
+2017-2023 pooled,all,all,overall,logistic,bmi,undiagnosed_missed,0.025486798876441962,0.08517428399143724,128
+2017-2023 pooled,all,all,overall,logistic,waist,undiagnosed_missed,0.09761757077536297,0.35450555596472183,128
+2017-2023 pooled,all,all,overall,logistic,insured,undiagnosed_missed,-0.02129911900990468,0.05853148848724,128
+2017-2023 pooled,all,all,overall,logistic,routine_care,undiagnosed_missed,-0.16016049238913724,0.3526966477163346,128
+2017-2023 pooled,all,all,overall,logistic,male,undiagnosed_missed,0.005899793640644668,0.10850599567020004,128
+2017-2023 pooled,all,all,overall,logistic,pir_missing,undiagnosed_missed,0.0008030587901613216,0.0056873917944811545,128
+2017-2023 pooled,all,all,overall,logistic,access,undiagnosed_missed,-0.18145961139904193,0.36329184029645106,128
+2017-2023 pooled,all,all,overall,logistic,body_size,undiagnosed_missed,0.12310436965180496,0.43318790066166296,128
+2017-2023 pooled,all,all,overall,logistic,socioeconomic,undiagnosed_missed,-0.02196235069322027,0.3254290287607525,128
+2017-2023 pooled,all,all,overall,lightgbm,age,diagnosed_flagged,0.9154151295875509,0.9332959566210876,1670
+2017-2023 pooled,all,all,overall,lightgbm,education,diagnosed_flagged,0.012726377057882945,0.13259172721240328,1670
+2017-2023 pooled,all,all,overall,lightgbm,pir,diagnosed_flagged,-0.019637898392290555,0.19506102376061119,1670
+2017-2023 pooled,all,all,overall,lightgbm,bmi,diagnosed_flagged,0.15239701874671313,0.1867502369859166,1670
+2017-2023 pooled,all,all,overall,lightgbm,waist,diagnosed_flagged,0.5106808837086064,0.5649837003974868,1670
+2017-2023 pooled,all,all,overall,lightgbm,insured,diagnosed_flagged,0.017744247778651988,0.028558709190249065,1670
+2017-2023 pooled,all,all,overall,lightgbm,routine_care,diagnosed_flagged,0.10605248118991126,0.14092314773311101,1670
+2017-2023 pooled,all,all,overall,lightgbm,male,diagnosed_flagged,0.012468138212265984,0.04683396036182843,1670
+2017-2023 pooled,all,all,overall,lightgbm,pir_missing,diagnosed_flagged,-0.0006346413918817493,0.0024693886228187223,1670
+2017-2023 pooled,all,all,overall,lightgbm,access,diagnosed_flagged,0.12379672896856322,0.16094815522866932,1670
+2017-2023 pooled,all,all,overall,lightgbm,body_size,diagnosed_flagged,0.6630779024553194,0.7238180692044225,1670
+2017-2023 pooled,all,all,overall,lightgbm,socioeconomic,diagnosed_flagged,-0.007546162726289347,0.27576108504084745,1670
+2017-2023 pooled,all,all,overall,lightgbm,age,diagnosed_missed,0.030980919121947906,0.7531434471273012,406
+2017-2023 pooled,all,all,overall,lightgbm,education,diagnosed_missed,-0.060437617490845,0.2011610857136187,406
+2017-2023 pooled,all,all,overall,lightgbm,pir,diagnosed_missed,-0.16582434523361658,0.2663057184127751,406
+2017-2023 pooled,all,all,overall,lightgbm,bmi,diagnosed_missed,0.04407505417082836,0.12498795894550256,406
+2017-2023 pooled,all,all,overall,lightgbm,waist,diagnosed_missed,-0.09700464679882603,0.46275229337345497,406
+2017-2023 pooled,all,all,overall,lightgbm,insured,diagnosed_missed,0.01766679197967759,0.04587989847577136,406
+2017-2023 pooled,all,all,overall,lightgbm,routine_care,diagnosed_missed,-0.040165672659040336,0.23014483365550173,406
+2017-2023 pooled,all,all,overall,lightgbm,male,diagnosed_missed,-0.007737376558948554,0.05804270344566271,406
+2017-2023 pooled,all,all,overall,lightgbm,pir_missing,diagnosed_missed,-0.0006230713246116968,0.0020568765804463212,406
+2017-2023 pooled,all,all,overall,lightgbm,access,diagnosed_missed,-0.02249888067936275,0.2549663739167999,406
+2017-2023 pooled,all,all,overall,lightgbm,body_size,diagnosed_missed,-0.052929592627997665,0.5500729141683237,406
+2017-2023 pooled,all,all,overall,lightgbm,socioeconomic,diagnosed_missed,-0.22688503404907331,0.42151469877822856,406
+2017-2023 pooled,all,all,overall,lightgbm,age,undiagnosed_flagged,0.8326392268551421,0.8653576462915517,309
+2017-2023 pooled,all,all,overall,lightgbm,education,undiagnosed_flagged,0.020715977130570353,0.16621367430538075,309
+2017-2023 pooled,all,all,overall,lightgbm,pir,undiagnosed_flagged,-0.01898191482584296,0.17988879074453998,309
+2017-2023 pooled,all,all,overall,lightgbm,bmi,undiagnosed_flagged,0.1544071543832659,0.1901536069579526,309
+2017-2023 pooled,all,all,overall,lightgbm,waist,undiagnosed_flagged,0.5753619750212848,0.6148700651302417,309
+2017-2023 pooled,all,all,overall,lightgbm,insured,undiagnosed_flagged,0.011385955465542205,0.034899371115832516,309
+2017-2023 pooled,all,all,overall,lightgbm,routine_care,undiagnosed_flagged,0.09407436614718603,0.14336100548246644,309
+2017-2023 pooled,all,all,overall,lightgbm,male,undiagnosed_flagged,0.0006092472617603168,0.04490019661951176,309
+2017-2023 pooled,all,all,overall,lightgbm,pir_missing,undiagnosed_flagged,-0.001020749819939628,0.0035732933579463587,309
+2017-2023 pooled,all,all,overall,lightgbm,access,undiagnosed_flagged,0.10546032161272823,0.16131977905861786,309
+2017-2023 pooled,all,all,overall,lightgbm,body_size,undiagnosed_flagged,0.7297691294045507,0.7746047803682301,309
+2017-2023 pooled,all,all,overall,lightgbm,socioeconomic,undiagnosed_flagged,0.0007133124847877694,0.27922084093355265,309
+2017-2023 pooled,all,all,overall,lightgbm,age,undiagnosed_missed,0.023129029231253786,0.6541302565455055,127
+2017-2023 pooled,all,all,overall,lightgbm,education,undiagnosed_missed,-0.09728757384090651,0.23236535328973576,127
+2017-2023 pooled,all,all,overall,lightgbm,pir,undiagnosed_missed,-0.12920278677154662,0.23745974004584153,127
+2017-2023 pooled,all,all,overall,lightgbm,bmi,undiagnosed_missed,0.08715394995165715,0.1470913890747981,127
+2017-2023 pooled,all,all,overall,lightgbm,waist,undiagnosed_missed,0.05605472475092559,0.5211823631306289,127
+2017-2023 pooled,all,all,overall,lightgbm,insured,undiagnosed_missed,-0.0031334702046453018,0.05350545123644902,127
+2017-2023 pooled,all,all,overall,lightgbm,routine_care,undiagnosed_missed,-0.1955704063131962,0.3435411426644643,127
+2017-2023 pooled,all,all,overall,lightgbm,male,undiagnosed_missed,-0.010558484723941594,0.052766853630949614,127
+2017-2023 pooled,all,all,overall,lightgbm,pir_missing,undiagnosed_missed,0.0004839017096759007,0.0011807358591879207,127
+2017-2023 pooled,all,all,overall,lightgbm,access,undiagnosed_missed,-0.19870387651784152,0.3577474375132688,127
+2017-2023 pooled,all,all,overall,lightgbm,body_size,undiagnosed_missed,0.14320867470258275,0.6396410486531666,127
+2017-2023 pooled,all,all,overall,lightgbm,socioeconomic,undiagnosed_missed,-0.22600645890277726,0.40397769155449237,127

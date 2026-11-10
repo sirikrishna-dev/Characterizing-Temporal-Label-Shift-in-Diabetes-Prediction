@@ -20,6 +20,19 @@ src/
   drift.py                 RQ3: feature, domain and label drift per period and subgroup
   monitor.py               RQ3: joins drift alarms with model degradation (2x2)
   make_review_plots.py     figures for the review deck
+  harness.py               shared scoring harness: matched flag rate, shared schema, paired comparisons
+  pu_models.py, pu_eval.py upgrade 1: PU learning (Elkan-Noto, SAR-EM), y_bio upper bound, audited labels
+  bbse.py                  upgrade 1: black-box shift estimation of true prevalence
+  benchmark.py             upgrade 2: semi-synthetic monitoring benchmark with known truth
+  audit_power.py           upgrade 2: lab-audit sample size (analytic + simulation)
+  screening_rules.py       upgrade 3: USPSTF 2021, ADA age rule, ADA Standards, ADA risk test (reduced)
+  explain.py               upgrade 5: TreeSHAP / logit decomposition of the hidden-case gap
+  decompose.py             upgrade 5: more diabetes vs more diagnosis; population vs within
+  rolling.py               upgrade 4: per-cycle expanding and frozen evaluation (plug-in fit/score)
+  extend_1999_2010.py      upgrade 4: 1999-2010 loader and harmonisation (not yet run, see file)
+  equivalence.py           TOST equivalence on the temporal family
+  make_analysis_plots.py    figures for the upgrade chapters
+  test_analyses.py         checks for every upgrade module
   test_*.py                checks, one file per module
 results/                   every CSV the modules write
 plots/                     review figures
@@ -53,6 +66,10 @@ python -m src.make_review_plots --prevalence nhanes_out/step5_weighted_prevalenc
 ```
 
 The notebook only needs re-running if the data has to be rebuilt from CDC. It downloads into nhanes_raw/, which git ignores.
+
+## Upgrades
+
+See RESULTS.md for what each upgrade found, the numbers, the caveats and the run order.
 
 ## Design decisions
 

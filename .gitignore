@@ -20,3 +20,6 @@ results/*.joblib
 Thumbs.db
 .vscode/
 .idea/
+.venv/
+nhanes_raw/
+__pycache__/
