@@ -25,17 +25,19 @@ src/
   bbse.py                  upgrade 1: black-box shift estimation of true prevalence
   benchmark.py             upgrade 2: semi-synthetic monitoring benchmark with known truth
   audit_power.py           upgrade 2: lab-audit sample size (analytic + simulation)
-  screening_rules.py       upgrade 3: USPSTF 2021, ADA age rule, ADA Standards, ADA risk test (reduced)
+  screening_rules.py       upgrade 3: USPSTF 2021, ADA age rule, ADA Standards, ADA risk test (reduced and full)
+  ada_items.py             upgrade 3: downloads the family history, gestational diabetes and activity items
   explain.py               upgrade 5: TreeSHAP / logit decomposition of the hidden-case gap
   decompose.py             upgrade 5: more diabetes vs more diagnosis; population vs within
   rolling.py               upgrade 4: per-cycle expanding and frozen evaluation (plug-in fit/score)
-  extend_1999_2010.py      upgrade 4: 1999-2010 loader and harmonisation (not yet run, see file)
+  extend_1999_2010.py      upgrade 4: 1999-2010 loader, harmonisation and validation
   equivalence.py           TOST equivalence on the temporal family
-  make_analysis_plots.py    figures for the upgrade chapters
-  test_analyses.py         checks for every upgrade module
+  make_upgrade_plots.py    figures for the upgrade chapters
+  test_upgrades.py         checks for every upgrade module
   test_*.py                checks, one file per module
-results/                   every CSV the modules write
-plots/                     review figures
+results/                   every CSV the modules write (2011-2023)
+results_long/              rolling evaluation on the 1999-2023 file
+plots/                     review and upgrade figures
 ```
 
 ## Setup
@@ -69,7 +71,7 @@ The notebook only needs re-running if the data has to be rebuilt from CDC. It do
 
 ## Upgrades
 
-See RESULTS.md for what each upgrade found, the numbers, the caveats and the run order.
+RESULTS.md has what each upgrade found, the numbers, the caveats and the run order for the upgrade modules. nhanes_out/nhanes_all_1999_2023.csv is built by src/extend_1999_2010.py and validated against published diagnosed prevalence (nhanes_out/nhanes_all_1999_2023_validation.csv).
 
 ## Design decisions
 

@@ -51,12 +51,25 @@ MIDPOINT = {"1999-2000": 2000.0, "2001-2002": 2002.0, "2003-2004": 2004.0, "2005
             "2015-2016": 2016.0, "2017-2020": 2018.6, "2021-2023": 2022.3}
 
 
+FOUR_YEAR = ("1999-2000", "2001-2002")
+
+
 def cycle_frame(df, cycles):
-    """All rows of the given cycles, w = w_lab scaled by years / total years."""
+    """All rows of the given cycles, w = w_lab scaled by years / total years.
+
+    CDC rule: when 1999-2000 and 2001-2002 are pooled, their rows must use the
+    4-year weight (w_lab_4yr, built by extend_1999_2010.py on the 2-year
+    scale), never the 2-year weights.
+    """
     total = sum(CYCLE_YEARS[c] for c in cycles)
     f = df.loc[df["cycle"].isin(cycles)].copy().reset_index(drop=True)
-    f["w"] = pd.to_numeric(f["w_lab"], errors="coerce").fillna(0.0) * \
-        f["cycle"].map(lambda c: CYCLE_YEARS[c] / total)
+    base = pd.to_numeric(f["w_lab"], errors="coerce")
+    if set(FOUR_YEAR) <= set(cycles):
+        if "w_lab_4yr" not in f:
+            raise ValueError("Pooling 1999-2000 with 2001-2002 needs w_lab_4yr; rebuild the long file")
+        four = f["cycle"].isin(FOUR_YEAR).to_numpy()
+        base = base.where(~four, pd.to_numeric(f["w_lab_4yr"], errors="coerce"))
+    f["w"] = base.fillna(0.0) * f["cycle"].map(lambda c: CYCLE_YEARS[c] / total)
     return f
 
 

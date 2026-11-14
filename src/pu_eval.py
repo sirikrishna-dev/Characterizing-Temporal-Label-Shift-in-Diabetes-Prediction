@@ -15,6 +15,13 @@ kind (logistic vs logistic, LightGBM vs LightGBM) at the matched flag rate,
 for noaccess, sar and bio, overall and the four primary subgroups, both test
 periods. Elkan-Noto is a sanity check (difference must be exactly 0) and the
 audit variants are a dose-response curve; neither is in the family.
+
+Second family "pu_beyond_ablation" (added after the internal review, so it is
+secondary, not pre-registered): SAR-EM minus the noaccess model of the same
+kind, sensitivity among undiagnosed cases at the matched flag rate, overall
+and primary subgroups, both test periods. noaccess drops the insurance and
+usual-care features but is still trained on y_diag. This family asks whether
+SAR-EM does anything beyond leaving the access features out of the classifier.
 """
 from __future__ import annotations
 
@@ -74,6 +81,8 @@ def evaluate(df, bundle, base_bundle, n_reps, seed=SEED):
             kind = m.split("_")[-1]
             if not m.startswith("diag_"):
                 compare.append((f"{m}|matched", f"diag_{kind}|matched"))
+            if m.startswith("sar_") and f"noaccess_{kind}" in methods:
+                compare.append((f"{m}|matched", f"noaccess_{kind}|matched"))
         res = score_methods(full, scores, thr, label, n_reps=n_reps, seed=seed + i,
                             compare=compare)
         frames.append(res)
@@ -85,6 +94,12 @@ def evaluate(df, bundle, base_bundle, n_reps, seed=SEED):
            & out["label_or_gap"].str.match(r"diff_vs_diag_(logistic|lightgbm)\|matched:undx$")
            & out["method"].str.split("_").str[0].isin(FAMILY_METHODS))
     out = add_family(out, "pu_gain", fam)
+    abl = (out["period_label"].isin([PERIODS[p] for p in TEST_PERIODS])
+           & out["role"].isin(["overall", "primary"])
+           & out["metric"].eq("sensitivity")
+           & out["label_or_gap"].str.match(r"diff_vs_noaccess_(logistic|lightgbm)\|matched:undx$")
+           & out["method"].str.startswith("sar_"))
+    out = add_family(out, "pu_beyond_ablation", abl)
     return out, share, matched
 
 
@@ -144,6 +159,10 @@ def main():
     fam = res[res["family"] == "pu_gain"]
     print(f"pu_gain family: {len(fam)} tests, {int((fam['q_bh'] < 0.05).sum())} with q < 0.05")
     view = fam[fam["subgroup"] == "all"][["period_label", "method", "estimate", "ci_low", "ci_high", "q_bh"]]
+    print(view.round(3).to_string(index=False))
+    abl = res[res["family"] == "pu_beyond_ablation"]
+    print(f"pu_beyond_ablation family: {len(abl)} tests, {int((abl['q_bh'] < 0.05).sum())} with q < 0.05")
+    view = abl[abl["subgroup"] == "all"][["period_label", "method", "estimate", "ci_low", "ci_high", "q_bh"]]
     print(view.round(3).to_string(index=False))
 
 

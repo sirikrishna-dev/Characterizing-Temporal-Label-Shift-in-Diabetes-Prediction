@@ -1,0 +1,31 @@
+metric,label_or_gap,margin,cells,tested,equivalent,main_margin
+auroc,y_bio,0.02,primary subgroups,28,0,False
+auroc,y_bio,0.02,overall,4,1,False
+auroc,y_diag,0.02,primary subgroups,28,0,False
+auroc,y_diag,0.02,overall,4,1,False
+auroc,y_bio,0.03,primary subgroups,28,10,True
+auroc,y_bio,0.03,overall,4,4,True
+auroc,y_diag,0.03,primary subgroups,28,7,True
+auroc,y_diag,0.03,overall,4,4,True
+auroc,y_bio,0.05,primary subgroups,28,25,False
+auroc,y_bio,0.05,overall,4,4,False
+auroc,y_diag,0.05,primary subgroups,28,20,False
+auroc,y_diag,0.05,overall,4,4,False
+sensitivity,undx,0.03,primary subgroups,28,0,False
+sensitivity,undx,0.03,overall,4,0,False
+sensitivity,y_bio,0.03,primary subgroups,28,0,False
+sensitivity,y_bio,0.03,overall,4,0,False
+sensitivity,y_diag,0.03,primary subgroups,28,1,False
+sensitivity,y_diag,0.03,overall,4,0,False
+sensitivity,undx,0.05,primary subgroups,28,0,True
+sensitivity,undx,0.05,overall,4,0,True
+sensitivity,y_bio,0.05,primary subgroups,28,5,True
+sensitivity,y_bio,0.05,overall,4,0,True
+sensitivity,y_diag,0.05,primary subgroups,28,5,True
+sensitivity,y_diag,0.05,overall,4,1,True
+sensitivity,undx,0.1,primary subgroups,28,1,False
+sensitivity,undx,0.1,overall,4,0,False
+sensitivity,y_bio,0.1,primary subgroups,28,22,False
+sensitivity,y_bio,0.1,overall,4,4,False
+sensitivity,y_diag,0.1,primary subgroups,28,20,False
+sensitivity,y_diag,0.1,overall,4,4,False
