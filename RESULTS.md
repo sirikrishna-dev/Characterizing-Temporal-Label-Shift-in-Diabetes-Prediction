@@ -8,7 +8,7 @@ Each module defines its Benjamini-Hochberg families in its docstring. The famili
 |---|---|---|
 | No method or fix | `pu_models.py`, `pu_eval.py` | SAR-EM raises hidden-case sensitivity in 2017-2020, but simply dropping the access features gets about half of that, and the difference between the two is not significant. |
 | No explanation | `explain.py`, `decompose.py` | The model misses undiagnosed people because they are younger and have less insurance and usual care. The rise in diagnosed diabetes is more diabetes, not more diagnosis. |
-| No clinical comparison | `screening_rules.py`, `ada_items.py` | Over all adults the model beats USPSTF, but only because USPSTF stops at age 70. Inside ages 35-70 they catch the same share. |
+| No clinical comparison | `screening_rules.py`, `ada_items.py` | Over all adults the model beats USPSTF, but only because USPSTF stops at age 70. Inside ages 35-70 they catch the same share, and the full ADA risk test matches the model too. |
 | RQ3 had nothing to catch | `benchmark.py`, `audit_power.py`, `bbse.py` | Drift monitors react to population change, not to harm. A lab audit tracks harm but needs about 7,000 tested adults per period. |
 | Mostly null results | `equivalence.py` | Overall AUROC is stable within 0.03 in all 8 cells. That conclusion depends on the margin: at 0.02 only 2 of 8 cells qualify. |
 | Short timeline | `extend_1999_2010.py`, `rolling.py` | Eleven cycles, 1999-2023. A model trained on 1999-2000 alone still has AUROC 0.790 in 2021-2023. |
@@ -65,17 +65,19 @@ Over all adults, 2017-2020:
 |---|---|---|---|
 | USPSTF 2021 (ages 35-70, BMI 25+, 23+ for Asian adults) | 47% | 65.3% | -3.8 pts |
 | y_diag model at USPSTF's flag rate | 47% | 79.8% | 9.8 pts |
-| ADA risk test, reduced (score 5+) | 25-28% | 56.0% | 8.4 pts (men: 16.4) |
+| ADA risk test, reduced (score 5+) | 28% | 56.0% | 8.4 pts (men: 16.4) |
+| ADA risk test, full seven items (score 5+) | 47% | 80.4% | 8.2 pts (men: 17.9) |
 | ADA: everyone 35+ | 73% | 94.6% | 2.1 pts |
 | ADA Standards (35+, or overweight with a risk factor) | 83% | 98.0% | 0.3 pts |
 
-- Over all adults, the model at USPSTF's flag rate catches 15-20 more hidden cases per 100 (LightGBM 2017-2020: +17.6, CI 8.3 to 26.9, q = 0.006). 19 of the 128 tests in `rule_vs_model` are significant.
+- Over all adults, the model at USPSTF's flag rate catches 15-20 more hidden cases per 100 (LightGBM 2017-2020: +17.6, CI 8.3 to 26.9, q = 0.006). 16 of the 128 tests in `rule_vs_model` are significant, all of them against USPSTF or the ADA age-35 rule.
 - That advantage comes from the age limit. USPSTF does not apply above 70, and most of the difference sits in adults 60+ (+50 points, q < 0.001). Restricted to adults aged 35-70, where the rule is meant to be used, USPSTF flags 75.6% of 2011-2016 adults. At that same flag rate the model and the rule catch the same share of hidden cases: 90.5% vs 90.6% for logistic in 2017-2020 (difference -0.1, CI -4.2 to 4.0) and 91.3% vs 90.6% for LightGBM (0.7, CI -3.7 to 5.2). None of the 32 tests in `uspstf_35_70` is significant (smallest q = 0.33).
 - Inside ages 35-70 the model still has a diagnosed-vs-undiagnosed gap (5.4 to 5.9 points in 2017-2020) and USPSTF has none (-0.9). The rule treats diagnosed and undiagnosed people alike because it uses only age and BMI.
-- The ADA risk score shares the model's blind spot: it scores age and sex as the model does and has a 16.4-point gap in men. The gap comes from weighting age, not from machine learning as such.
+- The full ADA risk test is as good as the model at finding hidden cases. At the full test's flag rate the model catches 76.0% (logistic) and 75.9% (LightGBM) against the rule's 80.4%. The differences are -4.4 points (CI -16.9 to 8.2, q = 0.71) and -4.5 points (CI -15.9 to 6.9, q = 0.67).
+- Both versions of the ADA risk test share the model's blind spot. They score age and sex the way the model does and miss undiagnosed men more often: the gap in men is 16.4 points for the reduced test and 17.9 for the full test (CI 2.3 to 33.5). Adding family history, gestational diabetes and activity raises the share of hidden cases found from 56.0% to 80.4%, but leaves the overall gap where it was (8.4 vs 8.2 points). The gap comes from weighting age, not from machine learning as such.
 - The SAR-EM model at each rule's flag rate has smaller gaps than the y_diag model, for example 1.3 vs 7.9 points at the reduced ADA test's rate and 4.7 vs 9.8 at USPSTF's (2017-2020).
 
-The ADA risk test above is the reduced version. `python -m src.ada_items` downloads the three missing items: family history (MCQ300C), gestational diabetes (RHQ162) and leisure-time activity. `screening_rules.py` then also scores the full seven-item test. CDC dropped MCQ300C and RHQ162 from the 2021-2023 questionnaires (MCQ_L and RHQ_L analytic notes), so the full test exists for 2011-2016 and 2017-2020 only. In 2017-2020 it replaces the reduced test in the `rule_vs_model` family. The public RHQ files carry complete pregnancy answers only for women 20-44, so gestational diabetes is mostly missing for older women and scores 0 there.
+The full ADA risk test uses three items that `python -m src.ada_items` downloads: family history (MCQ300C), gestational diabetes (RHQ162) and leisure-time activity. CDC dropped MCQ300C and RHQ162 from the 2021-2023 questionnaires (MCQ_L and RHQ_L analytic notes), so the full test exists for 2011-2016 and 2017-2020 only, and 2021-2023 keeps the reduced test. In 2017-2020 the full test replaces the reduced one in the `rule_vs_model` family. The public RHQ files carry complete pregnancy answers only for women 20-44, so gestational diabetes is mostly missing for older women and scores 0 there.
 
 BP measurement switched from auscultatory to oscillometric in 2017; BP enters only the ADA rules.
 
@@ -146,7 +148,7 @@ Findings over eleven cycles:
 - Model intervals treat fitted models as fixed. The decomposition's reweighting holds the density-ratio weights fixed.
 - SAR-EM rests on two assumptions: risk features, not access, determine true diabetes, and the class prior is known from the lab sample. The ablation shows its gain cannot be separated from simply dropping the access features.
 - The benchmark is semi-synthetic. We chose its shifts, and real changes in diagnosis practice could look different.
-- The ADA risk test is reduced unless `src.ada_items` has been run, and it cannot be complete for 2021-2023. y_bio is still a single HbA1c reading.
+- The full ADA risk test cannot be scored for 2021-2023, and gestational diabetes is missing for most women over 44. y_bio is still a single HbA1c reading.
 - Two BH families (`pu_beyond_ablation`, `uspstf_35_70`) were added after the internal review and are secondary.
 - The long file's glucose values are not harmonised across instruments, so y_bio_fpg must not be used on it without applying CDC's trend equations.
 
